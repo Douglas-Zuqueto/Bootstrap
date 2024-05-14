@@ -1,9 +1,8 @@
 :root{
-    --btblack: #000;
-    --btGreen-100: #000;
-    --btGreen-200: #000;
-    --btGreen-300: #000;
- 
+    --btBlack: #000;
+    --btWhite: #fff;
+    --btOrange: #cd7f19;
+    --btGrey: #4b4c4d;
 }
 
 .navbar-brand img{
@@ -35,28 +34,61 @@
 
 }
 
-.footer{
+.footer2{
     padding: 20px 0;
 }
 
-.footer, .rSociais{
+.footer1, .infoFooter1 > a{
+    background-color: var(--btOrange);
+    color: var(--btWhite);
+}
+
+.infoFooter1 {
+    border: 1px solid var(--btBlack);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.infoFooter1 p {
+    margin: 0 10px 10px 10px;
+}
+
+.footer2, .rSociais{
     text-align: center;
     padding-top: 25px;
-    color: #4b4c4d;
+    color: var(--btGrey);
     /* background-color: var(--btblack); */
 }
 
-.footer .rSociais a{
-    font-size: 1.5rem;
-    border: 1px solid #ccc;
+.footer2 .rSociais a{
+    font-size: 1.7em;
+    border: 1px solid var(--btGrey);
     width: 40px;
     height: 40px;
     line-height: 38px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 20px 0;
     text-align: center;
     border-radius: 50%;
 
+}
+
+.fa-instagram {
+    color: coral;
+}
+
+.fa-twitter {
+    color: lightskyblue;
+}
+
+.fa-facebook {
+    color: mediumblue;
+}
+
+.fa-whatsapp {
+    color: limegreen
 }
 
 .carousel-indicators li {
@@ -65,6 +97,9 @@
     border-radius: 50%;
   }
 
+ul, li, a{
+    list-style: none;
+}
 
 
 
